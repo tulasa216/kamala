@@ -1,0 +1,46 @@
+Git basic commands
+git clone: the git clone command copies the an existing Git repository. The git clone command is the most common way for users to obtain a development copy. Git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location. 
+Cloning to specific folder: git clone<repo><directory>
+Cloning to specific tag: git clone—branch<tag> <repo>
+Shallow clone: git clone-depth=1<repo>
+
+git push: The git push command is used to upload local repository content to remote repository. To push on remote repository, you must need to commit if any changes made on your local repository. This command syntax is as follows:
+git push <repo name> <branch name>
+
+Push to a Specific Remote Repository and All Branches in it
+Git push –all<REMOTE-NAME>
+
+Push to a specific branch with force parameter
+Git push –force <REMOTE-NAME> <BRANCH-NAME>
+
+Push ignoring Git’s pre-push hook
+Git push –no-verify
+
+git pull: it is used to fetch and download content from remote repository and immediately update the local repository to match that content. For example, while working on master, execute git pull to update local copy of the master and remote tracking braches.
+
+merge conflict: it occur when you merge two different branches that contain different changes on the same file location. If developer A tries to edit code that Developer B is editing a conflict may occur. The git merge command’s primary responsibility is to combine separate braches and resolve any conflicting edits. 
+
+git branches: the default branch in the Git is master. The git branch command lets you to create, list, rename, and delete branches. in the branch, everyone can create file and folder and push to master. Branches couldn’t do as master can. 
+
+List of the all branches
+Git branch <branch>
+
+Create new branch called <branch>
+Git branch –d<branch>
+
+Delete the specified branch
+Git branch –D<branch>
+
+Rename the current branch to <branch>
+Git branch -a
+
+
+git commit:  it is used to save your changes on your local repository. You should include a commit before running “git commit” command. 
+Commit the staged snapshot
+Git commit –a
+
+Commit a snapshot of all changes in the working directory
+Git commit –m “commit message”
+
+             
+
