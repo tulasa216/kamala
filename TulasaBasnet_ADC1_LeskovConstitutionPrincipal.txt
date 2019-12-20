@@ -1,0 +1,13 @@
+SOLID design principles with example
+The Liskov Substitution Principle (LSP)
+It is introduced by Barbara liskov. Accoring to (LSP), “Derived classes must be substitutable for their base classes.”LSP is a particular definition of a subtyping relation, called(strong) behavioral subtyping. LSP is just a way to ensuring that inheritance is used correctly. For example, Ostrich can not be in inherit from Bird class because Ostrich cann’t fly but we can declare the the two classes like as:- FlyingBird and NonFlyingBird after that KishFisher should extend to FlyingBird and Ostrich should extend to NonFlyingBird. This is shown using java code is as follows:
+Public class Bird{
+}
+Public class FlyingBirds extends Bird{
+Public void fly(){
+}}
+Public class NonFlyingBirds extends Bird{}
+Public class KishFisher extends FlyingBirds{}
+Public class Ostrich extends NonFlyingBird{}
+
+
